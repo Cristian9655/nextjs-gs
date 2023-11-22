@@ -1,7 +1,7 @@
 "use client"
 import { useState } from "react";
 import axios from "axios";
-
+import Link from "next/link";
 
 export default function Login() {
     const [login, setLogin] = useState({ email: "", pass: "" });
@@ -15,20 +15,16 @@ export default function Login() {
             const response = await axios.get("http://localhost:8080/demo/webapi/users");
             const users = response.data;
 
-            // Verificar se há um usuário com o email e senha fornecidos
             const user = users.find((user) => user.email === login.email && user.senha === login.pass);
 
             if (user) {
-                // Usuário autenticado
                 sessionStorage.setItem("login", JSON.stringify(login));
-                window.location = "/";
+                window.location = "/historico";
             } else {
-                // Exibir alerta em caso de credenciais inválidas
                 alert("Credenciais inválidas. Por favor, verifique seu email e senha.");
             }
         } catch (error) {
             console.error("Erro ao fazer a requisição à API:", error);
-            // Exibir alerta em caso de erro na requisição
             alert("Erro ao processar a requisição. Tente novamente mais tarde.");
         }
     }
@@ -44,7 +40,9 @@ export default function Login() {
                 <label htmlFor="senha">Senha:</label>
                 <input type="password" id="senha" name="pass" value={login.pass} onChange={handleChange} />{" "}
 
-                <button type="submit" className="cadastro__form__botao" >Cadastrar</button>
+                <button type="submit" className="cadastro__form__botao" >Logar</button>
+
+                <Link href={'/cadastrar/0'} className="cadastro__form__link">Não tem cadastro? <br/>Cadastre-se</Link>
             </form>
         </main>
     )

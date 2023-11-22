@@ -32,7 +32,6 @@ header {
   }
 }
 
-
 .nav-list {
   display: flex;
   align-items: center;
@@ -177,11 +176,13 @@ header {
   }
 }
 
-
+main{
+  flex: 1 0 auto;
+}
 .Home{
   width: 90%;
   margin: 25px auto;
-  flex: 1 0 auto;
+
   display: flex;
   align-items: center;
   .home__texto1{
@@ -234,8 +235,8 @@ footer{
   }
 }
 
+
 .cadastro{
-  flex: 1 0 auto;
   width: 80%;
   margin: 0 auto;
   .cadastro__form__titulo{
@@ -275,6 +276,18 @@ footer{
       border: none;
       padding: 15px 0;
       color: #ffffff;
+      cursor: pointer;
+    }
+    .cadastro__form__link{
+      text-align: center;
+      margin-top: 15px;
+      color: #000000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .cadastro__form__link:hover{
+      text-decoration: underline;
     }
   }
 }
+
