@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Header(){
     function menuShow() {
         let menuMobile = document.querySelector('.mobile-menu');
-        let header = document.querySelector('header');
         if (menuMobile.classList.contains('open')) {
             menuMobile.classList.remove('open');
             document.querySelector('.icon').src = "./menu_black.svg";
@@ -21,8 +20,8 @@ export default function Header(){
                 <div className="nav-list">
                     <ul>
                         <li className="nav-item"><Link href={'/'} className="nav-link">Home</Link></li>
-                        <li className="nav-item"><Link href={'/vistoria'} className="nav-link">Vistoria</Link></li>
-                        <li className="nav-item"><Link href={'/seguros'} className="nav-link">Seguros</Link></li>
+                        <li className="nav-item"><Link href={'/historico'} className="nav-link">Historico</Link></li>
+                        <li className="nav-item"><Link href={'/ajuda'} className="nav-link">Ajuda/FAQ</Link></li>
                         <li className="nav-item"><Link href={'/integrantes'} className="nav-link">Integrantes</Link></li>
                         <li className="nav-item"><Link href={'/consumir'} className="nav-link">Consumo API</Link></li>
                     </ul>

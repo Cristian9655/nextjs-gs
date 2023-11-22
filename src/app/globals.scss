@@ -216,28 +216,60 @@ main{
   }
   .Home .home__texto1 .home__texto1__text {
     padding-left: 0; 
-}
-  
+  }
+  footer{
+    article{
+      flex-direction: column;
+      align-items: center;
+      .table__footer{
+        width: 80%;
+      }
+    }
+  }
 }
 
 footer{
-  background-color: rgb(240, 240, 240);
+  margin-top: 15vh;
   width: 100%;
   flex-shrink: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-evenly;
-
-  padding: 15px 0;
-  section>p{
-    font-size: 1em;
-    padding: 10px;
+  padding: 25px 0;
+  background-color: #ebebeb;
+  article{
+    display: flex;
+    justify-content: space-evenly;
+    img{
+      width: 250px;
+      object-fit: contain;
+    }
+    table {
+      width: 50%;
+      th, td {
+        padding: 10px;
+        text-align: left;
+        color: #636368;
+      }
+    
+      th {
+        color: #43434b;
+      }
+    
+    }
+    
   }
+  p{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding-top: 25px;
+    color: #636368;
+  }
+  
 }
 
 
 .cadastro{
-  width: 80%;
+  min-width: 40%;
+  max-width: 100%;
   margin: 0 auto;
   .cadastro__form__titulo{
     font-size: 2em;
@@ -246,7 +278,7 @@ footer{
   }
   .cadastro__form{
     margin: 60px auto;
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -290,4 +322,57 @@ footer{
     }
   }
 }
+
+.ajuda {
+  min-width: 50%;
+  max-width: 80%;
+  margin: 60px auto;
+
+  h2 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #393941;
+  }
+
+  p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #393941;
+  }
+
+  .faqItem {
+    margin-bottom: 16px;
+    border: 1px solid #bdd3f5;
+    border-radius: 25px;
+    overflow: hidden;
+    .faqTitle {
+      padding: 25px 20px;
+      font-size: 1.2em;
+      font-weight: 700;
+      background-color: #f0f0f0;
+      cursor: pointer;
+      color: #393941;
+      transition: background-color 0.3s ease, color 0.3s ease; /* Adiciona transição */
+    }
+
+    .faqAnswer {
+      padding: 15px 35px;
+      color: #5d5e6c;
+      font-size: 1.1em;
+    }
+  }
+
+  .active {
+    .faqTitle {
+      background-color: #eff6ff;
+      color: #0e6b89;
+    }
+  }
+}
+
+
+
+
 

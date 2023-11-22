@@ -5,9 +5,8 @@ import { useEffect, useState } from "react";
 const login = JSON.parse(sessionStorage.getItem("login")) 
 
 export default function Historico(){
-    const [user, setUser] = useState('')
 
-    if(!login) window.location = "/login"
+    //if(!login) window.location = "/login"
 
     return(
         <main>
