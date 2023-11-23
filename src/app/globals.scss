@@ -268,13 +268,13 @@ footer{
 
 
 .cadastro{
-  min-width: 40%;
+  min-width: 25%;
   max-width: 100%;
   margin: 0 auto;
   .cadastro__form__titulo{
     font-size: 2em;
     margin-bottom: 25px;
-    color: #2c317b;
+    color: #0e6b89;
   }
   .cadastro__form{
     margin: 60px auto;
@@ -304,7 +304,7 @@ footer{
       }
     }
     .cadastro__form__botao{
-      background-color: #2c317b;
+      background-color: #0e6b89;
       border: none;
       padding: 15px 0;
       color: #ffffff;
@@ -376,3 +376,108 @@ footer{
 
 
 
+
+.historico{
+  width: 90%;
+  margin: 55px auto;
+  p{
+    color: #393941;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .historico__titulo{
+    text-align: center;
+    font-size: 2.5em;
+    color:#393941;
+    margin-bottom: 35px;
+  }
+  .historico__table{
+    width: 100%;
+    margin: auto;
+    background-color: white;
+    border-collapse: collapse;
+    margin-bottom: 65px;
+    border-radius: 15px;
+    overflow: hidden;
+    thead{
+      tr{
+        background-color: #0e6b89;
+        color: white;
+        text-align: left;
+        th{
+          padding: 20px 15px;
+        }
+        .Criar{
+          a{
+            color: white;
+            text-decoration: none;
+          }
+          :hover{
+            text-decoration: underline;
+          }
+          display: flex;
+          justify-content: center;
+          background-color: #2e469d;
+        }
+      }
+    }
+
+    tbody{
+      .tr{
+        padding: 15px 15px;
+        .td{
+          padding: 10px 15px;
+
+        }
+        .excluir{
+          display: flex;
+          width: 100%;
+          padding: 10px 15px;
+          flex-direction: column;
+          align-items: center;
+          a{
+            font-size: 1em;
+            width: 100%;
+            background-color: green;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            color: white;
+            margin-bottom: 5px;
+            .FaPen{
+              margin-left: 10px;
+            }
+          }
+          button{
+            width: 100%;
+            font-size: 1em;
+            padding: 5px;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background-color: #3C5CCF;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 250ms;
+            .iconEx{
+              margin-left: 10px;
+            }
+          }
+          :hover{
+            background-color: rgb(170, 48, 48);
+            transform: scale(1.03);
+          }
+        }
+     
+      }
+      & tr:nth-child(2n){
+        background-color: #ccc;
+      }
+     
+    }
+  }
+}

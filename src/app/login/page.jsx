@@ -4,7 +4,7 @@ import axios from "axios";
 import Link from "next/link";
 
 export default function Login() {
-    const [login, setLogin] = useState({ email: "", pass: "" });
+    const[login, setLogin] = useState({ email: "", pass: "" });
 
     const handleChange = (e) => setLogin({ ...login, [e.target.name]: e.target.value });
 
@@ -18,7 +18,13 @@ export default function Login() {
             const user = users.find((user) => user.email === login.email && user.senha === login.pass);
 
             if (user) {
-                sessionStorage.setItem("login", JSON.stringify(login));
+                const userInformation = {
+                    idUser: user.idUser,
+                    nome: user.nome,
+                    email: user.email,
+
+                };
+                sessionStorage.setItem("login", JSON.stringify(userInformation));
                 window.location = "/historico";
             } else {
                 alert("Credenciais inválidas. Por favor, verifique seu email e senha.");
