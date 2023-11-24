@@ -11,7 +11,7 @@ export default function Saude(){
                     <h2 className="saude__principal__section__h2">A Importância Fundamental da Saúde do Sono para o Bem-Estar</h2>
                     <p className="saude__principal__section__p">Vivemos em uma era movimentada, onde a vida cotidiana muitas vezes nos empurra para além de nossos limites, deixando-nos com pouco tempo para descanso adequado. Este artigo explora a vital importância da saúde do sono para o nosso bem-estar físico e mental, oferecendo insights valiosos sobre como melhorar a qualidade do sono.</p>
                 </section>
-                <img src="https://static.wixstatic.com/media/c01813_70ad7a39c4e64498a279e30d1b1c64da~mv2.jpeg/v1/fill/w_740,h_657,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c01813_70ad7a39c4e64498a279e30d1b1c64da~mv2.jpeg" alt=""  className="saude__principal__img"/>
+                <img src="./saude_img.webp" alt=""  className="saude__principal__img"/>
             </article>
             <article className="saude__segundario">
                 <h3 className="saude__segundario__h3">Consequências de uma Má Saúde do Sono</h3>

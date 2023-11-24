@@ -50,23 +50,23 @@ export default function Cadastrar({params}){
                 <h2 className="cadastro__form__titulo">Cadastre-se</h2>
                 
                 <label htmlFor="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" value={novo.nome} onChange={handleChange}/>
+                <input type="text" id="nome" name="nome" value={novo.nome} onChange={handleChange} required/>
 
                 <label htmlFor="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" value={novo.senha} onChange={handleChange}/>
+                <input type="password" id="senha" name="senha" value={novo.senha} onChange={handleChange} required/>
 
                 <label htmlFor="genero">Genero </label>
-                <input type="text" id="genero" name="gender" value={novo.gender} onChange={handleChange}/>
+                <input type="text" id="genero" name="gender" value={novo.gender} onChange={handleChange} required/>
 
                 <label htmlFor="email">Email:</label>
-                <input type="text" id="email" name="email" value={novo.email} onChange={handleChange}/>
+                <input type="text" id="email" name="email" value={novo.email} onChange={handleChange} required/>
                 
 
                 <label htmlFor="idade">Idade:</label>
-                <input type="number" id="idade" name="age" value={novo.age} onChange={handleChange}/>
+                <input type="number" id="idade" name="age" value={novo.age} onChange={handleChange} required/>
                 
                 <label htmlFor="ocupacao">Ocupaçao </label>
-                <input type="text" id="ocupacao" name="occupation" value={novo.occupation} onChange={handleChange}/>
+                <input type="text" id="ocupacao" name="occupation" value={novo.occupation} onChange={handleChange} required/>
 
                 <button className="cadastro__form__botao">Cadastrar</button>
                 <Link href={'/login'} className="cadastro__form__link">Cancelar Cadastro</Link>

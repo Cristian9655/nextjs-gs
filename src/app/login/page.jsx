@@ -14,7 +14,6 @@ export default function Login() {
         try {
             const response = await axios.get("http://localhost:8080/demo/webapi/users");
             const users = response.data;
-
             const user = users.find((user) => user.email === login.email && user.senha === login.pass);
 
             if (user) {
@@ -41,10 +40,10 @@ export default function Login() {
                 <h2 className="cadastro__form__titulo">Faça seu Login</h2>
 
                 <label htmlFor="email">Email:</label>
-                <input type="text" id="email" name="email" value={login.email} onChange={handleChange} />{" "}
+                <input type="text" required id="email" name="email" value={login.email} onChange={handleChange} />{" "}
 
                 <label htmlFor="senha">Senha:</label>
-                <input type="password" id="senha" name="pass" value={login.pass} onChange={handleChange} />{" "}
+                <input type="password" required id="senha" name="pass" value={login.pass} onChange={handleChange} />{" "}
 
                 <button type="submit" className="cadastro__form__botao" >Logar</button>
 
