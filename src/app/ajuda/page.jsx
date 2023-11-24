@@ -37,16 +37,12 @@ export default function Ajuda() {
             answer:
                 'As análises são geradas com base nos dados que você registra. Na página "Análise do Sono" e "Análise Geral da Saúde", você encontrará insights sobre padrões e possíveis melhorias.',
         },
-
-        // Adicione mais itens conforme necessário
     ];
 
     return (
         <main className="ajuda">
             <h2>Perguntas Frequentes</h2>
             <p>Entendemos que você possa ter dúvidas sobre nossos serviços médicos. Aqui estão algumas perguntas e respostas comuns para ajudá-lo:</p>
-
-            
             {faqItems.map((item, index) => (
                 <div key={index} className={`faqItem ${accordionIndex === index ? 'active' : ''}`}>
                     <div className="faqTitle" onClick={() => toggleAccordion(index)}>

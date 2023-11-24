@@ -427,15 +427,17 @@ footer{
           padding: 5px 0;
           align-items: self-start;
           justify-content: flex-start;
+          margin-left: 5px;
           a{
             width: 150px;
             border-radius: 25px;
             padding: 5px 10px;
-            background-color: rgb(197, 228, 86);
+            background-color: #377bfa;
             font-size: 1em;
             text-decoration: none;
-            color: black;
+            color: white;
             text-align: center;
+            font-weight: 700;
           }
           button{
             width: 150px;
@@ -443,8 +445,9 @@ footer{
             color: white;
             padding: 5px 10px;
             border: none;
-            background-color: #cf3c3c;
+            background-color: #393941;
             font-size: 1em;
+            font-weight: 700;
           }
         }
         .td{
