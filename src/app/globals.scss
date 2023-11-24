@@ -400,6 +400,7 @@ footer{
     margin-bottom: 65px;
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 10px 10px 10px 10px rgb(143, 143, 143);
     thead{
       tr{
         background-color: #0e6b89;
@@ -407,18 +408,6 @@ footer{
         text-align: left;
         th{
           padding: 20px 15px;
-        }
-        .Criar{
-          a{
-            color: white;
-            text-decoration: none;
-          }
-          :hover{
-            text-decoration: underline;
-          }
-          display: flex;
-          justify-content: center;
-          background-color: #2e469d;
         }
       }
     }
@@ -428,51 +417,7 @@ footer{
         padding: 15px 15px;
         .td{
           padding: 10px 15px;
-
         }
-        .excluir{
-          display: flex;
-          width: 100%;
-          padding: 10px 15px;
-          flex-direction: column;
-          align-items: center;
-          a{
-            font-size: 1em;
-            width: 100%;
-            background-color: green;
-            text-align: center;
-            padding: 5px;
-            text-decoration: none;
-            border-radius: 5px;
-            color: white;
-            margin-bottom: 5px;
-            .FaPen{
-              margin-left: 10px;
-            }
-          }
-          button{
-            width: 100%;
-            font-size: 1em;
-            padding: 5px;
-            border-radius: 5px;
-            outline: none;
-            border: none;
-            background-color: #3C5CCF;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 250ms;
-            .iconEx{
-              margin-left: 10px;
-            }
-          }
-          :hover{
-            background-color: rgb(170, 48, 48);
-            transform: scale(1.03);
-          }
-        }
-     
       }
       & tr:nth-child(2n){
         background-color: #ccc;
@@ -480,13 +425,26 @@ footer{
      
     }
   }
+  .historico__deslogar{
+    width: 100%;
+    padding: 15px 0;
+    border-radius: 55px;
+    border: none;
+    background-color: #b92b2b;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 250ms;
+  }
+
+  .historico__deslogar:hover{
+    background-color: #c94a4a;
+  }
 }
 
 .saude{
   width: 90%;
   margin: 30px auto;
-
-
   .saude__principal{
     display: flex;
     gap: 50px;
@@ -506,12 +464,13 @@ footer{
       width: 300px;
     }
   }
+
   .saude__segundario{
     margin-top: 25px;
     background-color: #0e6b89;
     padding: 45px 25px;
     color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     text-align: center;
     .saude__segundario__h3{
       font-size: 2em;
@@ -527,11 +486,11 @@ footer{
       display: flex;
       gap: 20px;
       div{
-        background-color: #80c6dd;
+        background-color: #9bccdd;
         color: #000000;
         padding: 25px;
         width: 50%;
-        border-radius: 5px;
+        border-radius: 15px;
         h4{
           font-size: 1.3em;
           margin-bottom: 15px;
@@ -544,5 +503,43 @@ footer{
       }
     }
   }
+  .saude__terceiro{
+    margin-top: 80px;
+    border-top: 1px solid #0e6b89;
+    h3{
+      font-size: 1.5em;
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+    p{
+      text-align: justify;
+      font-size: 1.1em;
+    }
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .historico{
+    .historico__titulo{
+      font-size: 1.8em;
+    }
+    .historico__table{
+      font-size: 10px;
+    }
+  }
+  .saude{
+    .saude__principal{
+      flex-direction: column-reverse;
+    }
+    .saude__segundario{
+      .saude__segundario__section{
+        flex-direction: column;
+        div{
+          width: 100%;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  
 }

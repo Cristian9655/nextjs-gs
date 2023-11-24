@@ -45,6 +45,10 @@ export default function Saude(){
                     </div>
                 </section>
             </article>
+            <article className="saude__terceiro">
+                <h3>Conclusão</h3>
+                <p>Em um mundo acelerado, a saúde do sono muitas vezes é negligenciada, mas os efeitos de longo prazo podem ser devastadores. Este artigo destaca a importância de priorizar a qualidade do sono e oferece dicas práticas para melhorar os hábitos de sono. Ao adotar essas estratégias, podemos não apenas melhorar nossa saúde geral, mas também desfrutar de uma vida mais produtiva e equilibrada.</p>
+            </article>
         </main>
     )
 

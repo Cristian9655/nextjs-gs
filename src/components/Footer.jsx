@@ -5,7 +5,7 @@ export default function Footer(){
 
     const pathname = usePathname();
 
-    const seCadastrarLogin = pathname === '/' || pathname === '/historico' || pathname === '/ajuda';
+    const seCadastrarLogin = pathname === '/' || pathname === '/historico' || pathname === '/ajuda' || pathname === '/saude';
 
     return seCadastrarLogin ? (
         <footer>
