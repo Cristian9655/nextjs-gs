@@ -22,8 +22,7 @@ export default function Header(){
                         <li className="nav-item"><Link href={'/'} className="nav-link">Home</Link></li>
                         <li className="nav-item"><Link href={'/historico'} className="nav-link">Historico</Link></li>
                         <li className="nav-item"><Link href={'/ajuda'} className="nav-link">Ajuda/FAQ</Link></li>
-                        <li className="nav-item"><Link href={'/integrantes'} className="nav-link">Integrantes</Link></li>
-                        <li className="nav-item"><Link href={'/consumir'} className="nav-link">Consumo API</Link></li>
+                        <li className="nav-item"><Link href={'/saude'} className="nav-link">Saúde</Link></li>
                     </ul>
                 </div>
                 <div className="login-button">
@@ -39,9 +38,9 @@ export default function Header(){
             <div className="mobile-menu">
                 <ul>
                     <li className="nav-item"><Link href={'/'} className="nav-link">Home</Link></li>
-                    <li className="nav-item"><Link href={'/vistoria'} className="nav-link">Vistoria</Link></li>
-                    <li className="nav-item"><Link href={'/seguros'} className="nav-link">Seguros</Link></li>
-                    <li className="nav-item"><Link href={'/integrantes'} className="nav-link">Integrantes</Link></li>
+                    <li className="nav-item"><Link href={'/historico'} className="nav-link">Historico</Link></li>
+                    <li className="nav-item"><Link href={'/ajuda'} className="nav-link">Ajuda/FAQ</Link></li>
+                    <li className="nav-item"><Link href={'/saude'} className="nav-link">Saúde</Link></li>
                 </ul>
 
                 <div className="login-button">

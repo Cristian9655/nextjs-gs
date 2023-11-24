@@ -26,23 +26,23 @@ export default function Footer(){
                             <td>cargo</td>
                         </tr>
                         <tr>
-                            <td>Diego Seiti Ogita Iacabo</td>
-                            <td>551289</td>
+                            <td>João Lucas Marques Costa</td>
+                            <td>98376</td>
                             <td>cargo</td>
                         </tr>
                         <tr>
-                            <td>Diego Seiti Ogita Iacabo</td>
-                            <td>551289</td>
+                            <td>Alejandro Rabelo</td>
+                            <td>93606</td>
                             <td>cargo</td>
                         </tr>
                         <tr>
-                            <td>Diego Seiti Ogita Iacabo</td>
-                            <td>551289</td>
+                            <td>Cristian Alvaro Condori Paucara</td>
+                            <td>550509</td>
                             <td>cargo</td>
                         </tr>
                         <tr>
-                            <td>Diego Seiti Ogita Iacabo</td>
-                            <td>551289</td>
+                            <td>Luiz Felipe Azevedo de Oliveira</td>
+                            <td>550348</td>
                             <td>cargo</td>
                         </tr>
                     </tbody>

@@ -150,7 +150,7 @@ export default function Historico() {
                     <tr>
                         <th>Identificação do Usuario</th>
                         <th>Distúrbio do Sono</th>
-                        <th>Observacao</th>
+                        <th>Diagnostico</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -158,7 +158,7 @@ export default function Historico() {
                         <tr key={ana.id} className="tr">
                             <td className="td">{ana.idUser}</td>
                             <td className="td">{ana.sleepDisorder}</td>
-                            <td className="td">{ana.observacao}</td>
+                            <td className="td">{ana.diagnostic}</td>
                         </tr>
                     ))}
                 </tbody>

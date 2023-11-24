@@ -1,9 +1,10 @@
 'use client'
 import React, { useState } from 'react';
+const login = JSON.parse(sessionStorage.getItem("login"));
+
 export default function Ajuda() {
-
+    if (!login) window.location.pathname = "/login";
     
-
     const [accordionIndex, setAccordionIndex] = useState(null);
 
     const toggleAccordion = (index) => {
