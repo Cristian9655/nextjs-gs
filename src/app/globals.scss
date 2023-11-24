@@ -380,6 +380,11 @@ footer{
 .historico{
   width: 90%;
   margin: 55px auto;
+  .historico_tabelas{
+    color: #393941;
+    margin-bottom: 15px;
+    margin-left: 15px;
+  }
   p{
     color: #393941;
     font-size: 1.5em;
@@ -415,6 +420,33 @@ footer{
     tbody{
       .tr{
         padding: 15px 15px;
+        .excluir{
+          display: flex;
+          gap: 5px;
+          flex-direction: column;
+          padding: 5px 0;
+          align-items: self-start;
+          justify-content: flex-start;
+          a{
+            width: 150px;
+            border-radius: 25px;
+            padding: 5px 10px;
+            background-color: rgb(197, 228, 86);
+            font-size: 1em;
+            text-decoration: none;
+            color: black;
+            text-align: center;
+          }
+          button{
+            width: 150px;
+            border-radius: 25px;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            background-color: #cf3c3c;
+            font-size: 1em;
+          }
+        }
         .td{
           padding: 10px 15px;
         }

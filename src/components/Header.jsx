@@ -20,9 +20,9 @@ export default function Header(){
                 <div className="nav-list">
                     <ul>
                         <li className="nav-item"><Link href={'/'} className="nav-link">Home</Link></li>
-                        <li className="nav-item"><Link href={'/historico'} className="nav-link">Historico</Link></li>
-                        <li className="nav-item"><Link href={'/ajuda'} className="nav-link">Ajuda/FAQ</Link></li>
                         <li className="nav-item"><Link href={'/saude'} className="nav-link">Saúde</Link></li>
+                        <li className="nav-item"><Link href={'/ajuda'} className="nav-link">Ajuda/FAQ</Link></li>
+                        <li className="nav-item"><Link href={'/dados'} className="nav-link">Dados Registrados</Link></li>
                     </ul>
                 </div>
                 <div className="login-button">
@@ -38,7 +38,7 @@ export default function Header(){
             <div className="mobile-menu">
                 <ul>
                     <li className="nav-item"><Link href={'/'} className="nav-link">Home</Link></li>
-                    <li className="nav-item"><Link href={'/historico'} className="nav-link">Historico</Link></li>
+                    <li className="nav-item"><Link href={'/dados'} className="nav-link">Dados Registrados</Link></li>
                     <li className="nav-item"><Link href={'/ajuda'} className="nav-link">Ajuda/FAQ</Link></li>
                     <li className="nav-item"><Link href={'/saude'} className="nav-link">Saúde</Link></li>
                 </ul>

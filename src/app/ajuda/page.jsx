@@ -20,7 +20,7 @@ export default function Ajuda() {
         {
             question: 'Como faço para começar?',
             answer:
-                'Primeiro, registre-se em nossa plataforma. Após o login, você poderá registrar informações sobre seu sono, hábitos saudáveis e dados de saúde.',
+                'Primeiro, registre-se em nossa plataforma. Após o login, você poderá ver nossas paginas e dados registrado em nosso sistema.',
         },
         {
             question: 'Posso editar ou excluir meus registros?',

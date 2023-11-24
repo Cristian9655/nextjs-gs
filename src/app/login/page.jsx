@@ -24,7 +24,7 @@ export default function Login() {
 
                 };
                 sessionStorage.setItem("login", JSON.stringify(userInformation));
-                window.location = "/historico";
+                window.location = "/dados";
             } else {
                 alert("Credenciais inválidas. Por favor, verifique seu email e senha.");
             }
